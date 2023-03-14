@@ -9,6 +9,7 @@
   --Dark-grayish-blue: hsl(227, 10%, 46%);
 }
 main {
+  overflow: hidden;
   max-width: 100%;
   height: 100vh;
   background-color: var(--Dark-cyan);
@@ -19,4 +20,10 @@ main {
   position: absolute;
   top: -40%;
   left: -10%;
+}
+.b-b-c {
+  height: 100%;
+  position: absolute;
+  bottom: -40%;
+  right: -10%;
 }
