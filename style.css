@@ -29,6 +29,7 @@ main {
   position: absolute;
   bottom: -40%;
   right: -10%;
+  z-index: 9;
 }
 .reg-c {
   height: 350px;
@@ -37,6 +38,7 @@ main {
   overflow: hidden;
   border-radius: 12px;
   position: relative;
+  z-index: 10;
 }
 .bg-pattern-card {
 }
