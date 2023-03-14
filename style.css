@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+main {
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  position: relative;
+}
+.b-t-c {
+  height: 100%;
+  position: absolute;
+  top: -40%;
+  left: -10%;
+}
