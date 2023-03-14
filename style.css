@@ -4,12 +4,29 @@
   box-sizing: border-box;
 }
 :root {
+  /* colors  */
   --Dark-cyan: hsl(185, 75%, 39%);
   --Very-dark-desaturated-blue: hsl(231, 30%, 12%);
   --Dark-grayish-blue: hsl(227, 10%, 46%);
   --Dark-gray: hsl(0, 0%, 59%);
+  /* fonts  */
+  --size-4: 0.4rem;
+  --size-5: 0.5rem;
+  --size-12: 1.2rem;
+  --size-16: 1.6rem;
+  --size-18: 1.8rem;
+  --size-32: 3.2rem;
+  --size-48: 4.8rem;
+  --size-80: 8rem;
+  --size-96: 9.6rem;
+  --size-380: 38rem;
+  --size-350: 35rem;
+}
+html {
+  font-size: 10px;
 }
 body {
+  font-size: var(--size-16);
   font-family: "Kumbh Sans", sans-serif;
 }
 main {
@@ -37,11 +54,11 @@ main {
 }
 .reg-c {
   width: 100%;
-  height: 380px;
-  width: 350px;
+  height: var(--size-380);
+  width: var(--size-350);
   background-color: #fff;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: var(--size-12);
   position: relative;
   z-index: 10;
   display: flex;
@@ -53,9 +70,9 @@ main {
 }
 .avatar-img {
   position: absolute;
-  height: 96px;
+  height: var(--size-96);
   border-radius: 50%;
-  border: solid 5px #fff;
+  border: solid var(--size-5) #fff;
   top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -66,13 +83,13 @@ main {
   align-items: center;
   justify-content: center;
   width: 90%;
-  padding: 48px 48px;
+  padding: var(--size-48) var(--size-48);
 }
 .row {
-  margin-top: 80px;
+  margin-top: var(--size-80);
   display: flex;
 
-  gap: 48px;
+  gap: var(--size-48);
 }
 .row::before {
   position: absolute;
@@ -86,7 +103,7 @@ main {
 .row-c {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--size-4);
 }
 .row-b {
   color: var(--Very-dark-desaturated-blue);
@@ -98,18 +115,18 @@ main {
 }
 h1 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--size-18);
 }
 h1 span {
   color: var(--Very-dark-desaturated-blue);
-  margin-left: 4px;
+  margin-left: var(--size-4);
   font-weight: 400;
   color: var(--Dark-grayish-blue);
 }
 .h-t {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--size-4);
 }
 .h-t span {
   font-weight: 400;
